@@ -150,6 +150,20 @@ Media.prototype.getCurrentPosition = function (success, fail) {
 };
 
 /**
+ * Get position of audio.
+ */
+Media.prototype.detectVoice = function (success, fail) {
+    var me = this;
+    exec(
+        succ,
+        fail,
+        'Media',
+        'detectVoice',
+        [this.id]
+    );
+};
+
+/**
  * Start recording audio file.
  */
 Media.prototype.startRecord = function () {
